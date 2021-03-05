@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block contenido %}
+
+<div class="contenedor_registro">
+  <h3>Bienvenido Ingresa tus credenciales</h3>
+
+  <form class="formulario" action="{{url_for('main')}}" method="POST">
+    <p style = "margin-top:50px">Usuario</p>
+    <input class = "txt_info" type="text" name="usuario" placeholder="Ingresa tu usuario">
+    <p style="margin-top: 50px;">Contraseña</p>
+    <input class = "txt_info" type="text" name="clave" placeholder="Ingresa tu contraseña">
+    <button class = "BTN"> LOGIN </button>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+
+{% block contenido %}
+
+
+  <div class="contenedor_registro">
+
+    <h3>Formulario de registro</h3>
+
+    <form class="formulario" action="{{url_for('respuesta')}}" method="POST">
+      <input class = "txt_info" type="text" name="Nombre" placeholder="Ingresa tu nombre"/>
+      <br>
+      <input class = "txt_info" type="text" name="Usuario" placeholder="Ingresa tu nombre de usuario"/>
+      <br>
+      <input class = "txt_info" type="text" name="Clave" placeholder="Ingresa tu clave"/>
+      <br>
+      <button class = "BTN">Enviar</button>
+    </form>
+  </div>
+
+{% endblock %}

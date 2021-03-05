@@ -1,0 +1,38 @@
+*{
+    padding:0px;
+    margin:0px;
+   
+}
+h3 {
+    font-family: sans-serif;
+    color: cadetblue;
+    text-align: center;
+    padding:15px;
+    font-size:20px;
+}
+div {
+    margin:auto;
+    width: 60%;
+}
+div.table{
+    
+    color:white;
+    text-align: center;
+    width:60%;
+    align-self:center;
+}
+td,th{
+    padding:15px;
+    margin:5px;
+    font-family:Verdana;
+    color:white;
+    font-size:large;
+    border-color:wheat;
+   border-style:solid;
+}
+table {
+   margin:auto;
+   margin-top:50px;
+   width:60%;
+   background-color:#1a1d27;
+}

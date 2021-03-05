@@ -1,0 +1,33 @@
+<div class="">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='estilos/main.css')}}">
+    <h3>Lista de usuarios</h3>
+    <div class="table">
+        <table>
+            <thead>
+            <th>Nombre</th>
+            <th>Usuario</th>
+            <th>Clave</th>
+            <th>Esatatus</th>
+            <th>Cinfo</th>
+            </thead>
+            <tbody>
+                {% for elemento in lista %}
+                <tr>
+                    <td>{{elemento[0]}}</td>
+                    <td>{{elemento[1]}}</td>
+                    <td>{{elemento[2]}}</td>
+                    <td>Activo</td>
+                    <td><a href="" style="text-decoration:none;color:orange">clic</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    <!--
+    {% for elemento in lista %}
+    <p> {{elemento}}</p>
+    {% endfor %}
+    -->
+</div>
